@@ -1,0 +1,31 @@
+[package]
+name = "accounts_worker"
+version = "0.1.0"
+edition = "2021"
+authors = ["Alex Braz <alexjavabraz@gmail.com>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ferris-says = "0.2"
+tokio = { version = "1.12.0", features = ["macros", "time", "rt-multi-thread"] }
+warp = "0.3.1"
+futures = { version = "0.3.17", default-features = true }
+tokio-amqp = "1.0.0"
+thiserror = "1.0.30"
+deadpool = "0.9.0"
+deadpool-lapin = "0.9.0"
+lapin = "1.8.0"
+mongodb = "2.0.0"
+serde_json = "1.0.73"
+serde = "1.0.132"
+chrono = "0.4.19"
+
+async-reactor-trait = "^1.0"
+async-trait = "^0.1.42"
+executor-trait = "^2.0"
+futures-lite = "^1.7"
+parking_lot = "^0.11"
+pinky-swear = "^5.1"
+reactor-trait = "^1.0"
+waker-fn = "^1.1"
